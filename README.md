@@ -1,45 +1,84 @@
-# CodeInterpreterGPT
+# CodeInterpreterGPT - Python Code Interpreter
 
-CodeInterpreterGPT is a comprehensive project that leverages the power of OpenAI's API and Anaconda Powershell Prompt to reverse-engineer ChatGPT's Advanced Data Analysis, formerly known as Code Interpreter. This project was primarily a hobby project.
+CodeInterpreterGPT is a project that utilizes the GPT-4 model provided by OpenAI and the PowerShell Prompt of Anaconda to create a system that can interpret and execute Python code in a manner similar to the Advanced Data Analysis feature of ChatGPT. This project aims to provide a highly interactive and useful tool for Python programmers, data scientists, and machine learning enthusiasts.
 
-## Features
+The project is structured to use OpenAI's API to interpret and execute Python code snippets in an environment that resembles a Jupyter Notebook. This environment is facilitated by the integration of Anaconda PowerShell Prompt, which provides a robust and versatile command-line interface for Python code execution. Utilizing the capabilities of the GPT-4 model, the project can conduct data analysis tasks, making it a useful tool for data exploration and comprehension.
 
-* **Code interpretation and execution**: Using OpenAI's API, CodeInterpreterGPT can interpret and execute code snippets in a Jupyter Notebook like fashion just like ChatGPT's Advanced Data Analysis.
-* **Integration with Anaconda Powershell Prompt**: self explanatory
-* **Advanced data analysis**: The project utilizes the GPT-4 model for advanced data analysis.
+## Table of Contents
 
-## Key Files
+- [Getting Started](#getting-started)
+- [Core Features](#core-features)
+- [Primary Components](#primary-components)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Required Dependencies](#required-dependencies)
+- [Known Limitations](#known-limitations)
+- [Future Developments](#future-developments)
+- [Contribution Guidelines](#contribution-guidelines)
+- [License Information](#license-information)
 
-* **main.py**: Acts as the main entry point of the application and is responsible for initializing the CodeExecutor class and starting the application.
-* **code_executor.py**: Houses the CodeExecutor class, which is primarily responsible for executing the code snippets.
-* **openai_api.py**: Contains the functions necessary for interacting with the OpenAI API.
-* **interactive_shell.py**: Sets up an interactive shell for executing commands.
-* **app.py**: Contains the main application logic, including the routes for the web server.
+## Getting Started
+
+To begin with CodeInterpreterGPT, you need to have Python and Anaconda installed on your system. Once you have these prerequisites, clone the repository and install the necessary dependencies. After setting up the environment, you can run the `main.py` file to start the application.
+
+## Core Features
+
+### Code Interpretation and Execution
+
+CodeInterpreterGPT uses OpenAI's API to interpret and execute Python code snippets within a Jupyter Notebook-like environment.
+
+### Anaconda PowerShell Prompt Integration
+
+CodeInterpreterGPT integrates seamlessly with Anaconda PowerShell Prompt, offering a robust environment for executing Python code.
+
+### Data Analysis
+
+The project leverages the power of the GPT-4 model for data analysis tasks.
+
+## Primary Components
+
+- `main.py`: The main entry point of the application, responsible for initializing the `CodeExecutor` class and starting the execution.
+- `code_executor.py`: This file houses the `CodeExecutor` class, which takes care of executing Python code snippets.
+- `openai_api.py`: This module contains the necessary functions for interacting with the OpenAI API.
+- `interactive_shell.py`: This script creates an interactive shell for executing commands.
+
+## Installation
+
+Follow these steps to install and set up CodeInterpreterGPT:
+
+1. Ensure that Python and Anaconda are installed on your system.
+2. Clone the CodeInterpreterGPT repository to your local machine.
+3. Navigate to the cloned repository and install the required dependencies using the `requirements.txt` file.
+4. Run the `main.py` script to start the application.
 
 ## Usage
 
-To use CodeInterpreterGPT, ensure Python is installed on your machine. Then, clone the repository and install the necessary dependencies. Once the setup is complete, run the `main.py` file to start the application.
+To use CodeInterpreterGPT, follow these steps:
 
-> **Note**: An OpenAI API key is required to use this application. You can obtain this key from the OpenAI website.
+1. Open the Anaconda PowerShell prompt and navigate to the directory containing the `main.py` file.
+2. Run `python main.py` to launch the application.
+3. You will be prompted to enter Python code snippets for interpretation and execution.
 
-## Dependencies
+**Note:** You will need an OpenAI API key to use the application, which you can obtain from the OpenAI website.
 
-* OpenAI API
-* Anaconda Powershell Prompt
-* Python
+## Required Dependencies
 
-## Limitations
+- OpenAI API
+- Anaconda PowerShell Prompt
+- Python
 
-The current version of CodeInterpreterGPT is a proof of concept and has some limitations. It can only interpret and execute simple code snippets. Complex code snippets or those that require additional dependencies might not work correctly.
+## Known Limitations
 
-## Future Work
+CodeInterpreterGPT is currently in the proof-of-concept stage. It can interpret and execute simple Python code snippets effectively. However, more complex code or code requiring additional dependencies may not function as expected.
 
-Future versions of CodeInterpreterGPT will aim to enhance the code execution capabilities, include streaming outputs like ChatGPT, and im not sure what else. Additional features such as code debugging and performance profiling are also planned.
+## Future Developments
 
-## Contributing
+Future versions of CodeInterpreterGPT will concentrate on enhancing its code execution capabilities, potentially introducing features like streaming outputs similar to ChatGPT. Other possible improvements include code debugging, performance profiling, and code optimization.
 
-Contributions to CodeInterpreterGPT are always welcome. Feel free to submit a pull request or open an issue on the GitHub repository.
+## Contribution Guidelines
 
-## License
+Contributions to CodeInterpreterGPT are welcomed. We encourage you to submit pull requests or open issues on the GitHub repository if you have suggestions, improvements, or fixes.
 
-CodeInterpreterGPT is open-source software, licensed under the MIT license.
+## License Information
+
+CodeInterpreterGPT is open-source software released under the MIT license. For further details, please refer to the `LICENSE` file in the repository.
