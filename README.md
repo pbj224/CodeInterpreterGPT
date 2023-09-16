@@ -77,7 +77,7 @@ Future versions of CodeInterpreterGPT will concentrate on enhancing its code exe
 
 ## Contribution Guidelines
 
-Contributions to CodeInterpreterGPT are welcomed. We encourage you to submit pull requests or open issues on the GitHub repository if you have suggestions, improvements, or fixes.
+Contributions to CodeInterpreterGPT are welcomed. Feel free to submit pull requests or open issues on the GitHub repository if you have suggestions, improvements, or fixes.
 
 ## License Information
 
