@@ -1,8 +1,8 @@
 # CodeInterpreterGPT - Python Code Interpreter
 
-CodeInterpreterGPT is a project that utilizes the GPT-4 model provided by OpenAI and the PowerShell Prompt of Anaconda to create a system that can interpret and execute Python code in a manner similar to the Advanced Data Analysis feature of ChatGPT. This project aims to provide a highly interactive and useful tool for Python programmers, data scientists, and machine learning enthusiasts.
+CodeInterpreterGPT is a project that leverages the GPT-4 model provided by OpenAI, Anaconda's PowerShell Prompt, and native Command Shell to create a system capable of interpreting and executing both Python and shell commands. This project aims to provide a highly interactive and versatile tool for Python programmers, data scientists, machine learning enthusiasts, and system administrators.
 
-The project is structured to use OpenAI's API to interpret and execute Python code snippets in an environment that resembles a Jupyter Notebook. This environment is facilitated by the integration of Anaconda PowerShell Prompt, which provides a robust and versatile command-line interface for Python code execution. Utilizing the capabilities of the GPT-4 model, the project can conduct data analysis tasks, making it a useful tool for data exploration and comprehension.
+The project is structured to use OpenAI's API to interpret and execute Python code snippets in an environment that resembles a Jupyter Notebook. This environment is facilitated by the integration of Anaconda PowerShell Prompt, which provides a robust and versatile command-line interface for Python code execution. Utilizing the capabilities of the GPT-4 model, the project can conduct data analysis tasks, making it a useful tool for data exploration and comprehension. The repository also includes a CommandShellExecutor class wrapped within a CommandShellManager. This setup allows GPT-4 to execute shell commands while maintaining a stateful experience.
 
 ## Table of Contents
 
@@ -35,12 +35,18 @@ CodeInterpreterGPT integrates seamlessly with Anaconda PowerShell Prompt, offeri
 
 The project leverages the power of the GPT-4 model for data analysis tasks.
 
+### Command Shell Execution
+
+Newly integrated Command Shell Executor allows for executing native shell commands within the same environment, making the tool more versatile.
+
 ## Primary Components
 
 - `main.py`: The main entry point of the application, responsible for initializing the `CodeExecutor` class and starting the execution.
 - `code_executor.py`: This file houses the `CodeExecutor` class, which takes care of executing Python code snippets.
+- `command_shell_executor.py`: Executes shell commands.
 - `openai_api.py`: This module contains the necessary functions for interacting with the OpenAI API.
 - `interactive_shell.py`: This script creates an interactive shell for executing commands.
+- `command_shell_manager.py`: Manages the Command Shell Executor.
 
 ## Installation
 
