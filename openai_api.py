@@ -12,7 +12,7 @@ class OpenAI_API:
             functions=[
                 {
                     "name": "execute_python_code",
-                    "description": "Execute python code in a conda virtual jupyter like environment",
+                    "description": "Execute python code in a stateful conda virtual jupyter like environment",
                     "parameters": {
                         "type": "object",
                         "properties": {
@@ -22,6 +22,18 @@ class OpenAI_API:
                             },
                         },
                         "required": ["code"],
+                    },
+                    "name": "execute_cmd_shell",
+                    "description": "Execute shell commands while maintaining a stateful experience",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "cmd_str": {
+                                "type": "string",
+                                "description": "string containing a shell command you want to execute",
+                            },
+                        },
+                        "required": ["cmd_str"],
                     },
                 }
             ],
